@@ -5,8 +5,6 @@
 
 int zmk_widget_custom_init(struct zmk_widget_custom *widget, lv_obj_t *parent);
 lv_obj_t *zmk_widget_custom_obj(struct zmk_widget_custom *widget);
-int zmk_widget_custom_set_status(struct zmk_widget_custom *widget, 
-                                 struct custom_status_state state);
 
 struct zmk_widget_custom {
     sys_snode_t node;
