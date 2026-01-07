@@ -6,12 +6,6 @@ LOG_MODULE_DECLARE(zmk, CONFIG_ZMK_LOG_LEVEL);
 
 static sys_slist_t widgets = SYS_SLIST_STATIC_INIT(&widgets);
 
-struct custom_status_state {
-    // Define your widget state here
-    uint8_t value;
-    bool active;
-};
-
 int zmk_widget_custom_init(struct zmk_widget_custom *widget, lv_obj_t *parent) {
     char greetings[] = "Hello World!";
 
