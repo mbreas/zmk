@@ -8,6 +8,15 @@ config ZMK_WIDGET_LAYER_STATUS
     depends on !ZMK_SPLIT || ZMK_SPLIT_ROLE_CENTRAL
     select LV_USE_LABEL
 
+# In app/src/display/widgets/Kconfig
+config ZMK_WIDGET_CUSTOM
+    bool "Widget for custom display"
+    depends on ZMK_DISPLAY
+    default y
+    help
+        Enables a widget to show custom information
+
+
 config ZMK_WIDGET_BATTERY_STATUS
     bool "Widget for battery charge information, using small icons"
     depends on ZMK_BATTERY_REPORTING

@@ -133,3 +133,5 @@ if (CONFIG_ZMK_STUDIO_RPC)
 endif()
 
 zephyr_cc_option(-Wfatal-errors)
+
+target_sources_ifdef(CONFIG_ZMK_WIDGET_CUSTOM app PRIVATE src/display/widgets/custom_widget.c)
