@@ -9,6 +9,13 @@ menuconfig ZMK_DISPLAY
 
 if ZMK_DISPLAY
 
+config ZMK_WIDGET_CUSTOM
+    bool "Widget for custom display"
+    depends on ZMK_DISPLAY
+    default y
+    help
+        Enables a widget to show custom information
+
 config ZMK_DISPLAY_BLANK_ON_IDLE
     bool "Blank display on idle"
     default y if SSD1306
