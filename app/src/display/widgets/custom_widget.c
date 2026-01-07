@@ -38,10 +38,6 @@ int zmk_widget_custom_init(struct zmk_widget_custom *widget, lv_obj_t *parent) {
     widget->label = lv_label_create(widget->obj);
     lv_obj_align(widget->label, LV_ALIGN_CENTER, 0, 0);
 
-    char text[64];
-    snprintf(text, sizeof(text), "Hallo");
-    lv_label_set_text(widget->label, text);
-
     sys_slist_append(&widgets, &widget->node);
 
     return 0;
