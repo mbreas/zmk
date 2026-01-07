@@ -12,8 +12,6 @@ struct custom_status_state {
     bool active;
 };
 
-void custom_status_update_cb(struct custom_status_state state) { struct zmk_widget_custom *widget; }
-
 int zmk_widget_custom_init(struct zmk_widget_custom *widget, lv_obj_t *parent) {
     char greetings[] = "Hello World!";
 
