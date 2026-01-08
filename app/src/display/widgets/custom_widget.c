@@ -9,7 +9,7 @@
 LOG_MODULE_DECLARE(zmk, CONFIG_ZMK_LOG_LEVEL);
 
 #include <zmk/display.h>
-#include <zmk/display/widgets/custom_widget.h>
+#include <zmk/display/widgets/custom.h>
 #include <zmk/events/layer_state_changed.h>
 #include <zmk/event_manager.h>
 #include <zmk/endpoints.h>
@@ -36,8 +36,6 @@ static void set_layer_symbol(lv_obj_t *label, struct custom_state state) {
 
         lv_label_set_text(label, text);
     }
-
-    lv_label_set_text(label, "Hello world!");
 }
 
 static void custom_update_cb(struct custom_state state) {
