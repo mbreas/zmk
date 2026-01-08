@@ -37,7 +37,7 @@ static void set_layer_symbol(lv_obj_t *label, struct custom_state state) {
         lv_label_set_text(label, text);
     }
 
-    lv_label_set_text(label, "Hello world!")
+    lv_label_set_text(label, "Hello world!");
 }
 
 static void custom_update_cb(struct custom_state state) {
