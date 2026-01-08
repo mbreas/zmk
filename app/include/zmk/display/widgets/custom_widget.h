@@ -6,7 +6,6 @@
 struct zmk_widget_custom {
     sys_snode_t node;
     lv_obj_t *obj;
-    lv_obj_t *label;
 };
 
 int zmk_widget_custom_init(struct zmk_widget_custom *widget, lv_obj_t *parent);

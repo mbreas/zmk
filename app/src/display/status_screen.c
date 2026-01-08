@@ -74,7 +74,7 @@ lv_obj_t *zmk_display_status_screen() {
 #if IS_ENABLED(ZMK_WIDGET_CUSTOM)
     zmk_widget_custom_init(&custom_widget, screen);
     lv_obj_align(zmk_widget_custom_obj(&custom_widget), LV_ALIGN_CENTER, 0, 0);
-#endif
+#endifs
 
     return screen;
 }
